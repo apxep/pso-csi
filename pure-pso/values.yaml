@@ -69,6 +69,10 @@ images:
     name: purestorage/k8s
     tag: v6.0.3
     pullPolicy: Always
+  node-config:
+    name: purestorage/node-config
+    tag: v0.1.0
+    pullPolicy: Always
   csi:
     provisioner:
       name: quay.io/k8scsi/csi-provisioner
