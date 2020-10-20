@@ -211,6 +211,9 @@ The following table lists the configurable parameters and their default values.
 | `images.plugin.name`                           | The image name to pull from                                                                                                                                | `purestorage/k8s`                             |
 | `images.plugin.tag`                            | The image tag to pull                                                                                                                                      | `v6.0.3`                                      |
 | `images.plugin.pullPolicy`                     | Image pull policy                                                                                                                                          | `Always`                                      |
+| `images.nodeConfig.name`                       | The image name to pull from                                                                                                                                | `quay.io/purestorage/pso-node-config`         |
+| `images.nodeConfig.tag`                        | The image tag to pull                                                                                                                                      | `latest`                                      |
+| `images.nodeConfig.pullPolicy`                 | Image pull policy                                                                                                                                          | `Always`                                      |
 | `images.csi.provisioner.name`                  | The image name of the csi-provisioner                                                                                                                      | `quay.io/k8scsi/csi-provisioner`              |
 | `images.csi.provisioner.pullPolicy`            | Image pull policy                                                                                                                                          | `Always`                                      |                                                                                                                                         | `Always      `                                |
 | `images.csi.snapshotter.name`                  | The image name of the csi snapshotter                                                                                                                      | `quay.io/k8scsi/csi-snapshotter`              |
@@ -269,6 +272,7 @@ Strict attention must be paid to the versions of image you provide locally as PS
 | quay.io/k8scsi/csi-resizer               | v0.5.0  |
 | quay.io/k8scsi/livenessprobe             | v2.0.0  |
 | quay.io/k8scsi/csi-node-driver-registrar | v1.3.0  |
+| quay.io/purestorage/pso-node-config      | latest  |
 | purestorage/cockroach-operator           | v1.0.3  |
 | purestorage/dbdeployer                   | v1.0.3  |
 | purestorage/psctl                        | v1.0.1  |
